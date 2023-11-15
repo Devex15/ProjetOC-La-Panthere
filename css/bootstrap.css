@@ -2063,6 +2063,7 @@ pre code {
 .col-xs-7,
 .col-xs-8,
 .col-xs-9 {
+    position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px
@@ -2303,7 +2304,7 @@ pre code {
         float: left
     }
     .col-sm-12 {
-        width: 100%
+        width: 100%;
     }
     .col-sm-11 {
         width: 91.66666667%
@@ -7681,10 +7682,10 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    /* background-color: #000\9; */ /* mis en commentaire car inutile : /9 signifie , ne s'applique que jusque IE9 */
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .carousel-indicators .active {
